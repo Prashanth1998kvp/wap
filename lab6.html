@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab6</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="uid" id="uid">user name
+            <input type="password" name="pswd" id="pswd">possword
+            <input type="button" onclick="p(this.form)"value="login">
+            <input type="reset">
+
+        </form>
+        <script>
+            var ck_username = /^1[A-ZA-Z0-90-9A-ZA-ZA-Z0-90-9]{9}$/;
+		
+        var ck_pwd = /^(?=.*\d)(?=.*[!@#$%^&])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+            function p(form){
+                var a=form.uid.value;
+                var b=form.pswd.value;
+                if ((!ck_username.test(a))||(!ck_pwd.test(b)))
+                {
+                    alert("incorrect user name or password");
+                }
+                else {
+                    alert("done");
+                    var d=new Date()
+                    document.write(d)
+                    document.write(a)
+                    document.body.bgColor="red";
+                }
+                
+                
+            }
+            
+        </script>
+        
+    </body>
+</html>

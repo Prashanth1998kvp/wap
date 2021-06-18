@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>json</title>
+    
+    <script>
+        function create(){
+            var student=[
+                {
+                    "name":"prashanth",
+                    "usn":"012"
+                },
+                {
+                    "name":"likitha",
+                    "usn":"060"
+                },
+            ]
+            var tablebody='<table border=1><tr><td>name</td><td>usn</td></tr>'
+            student.forEach(function(d){
+                tablebody+='<tr><td>'+d.name+'</td><td>'+d.usn+'</td></tr>'
+
+            });
+            tablebody+='<table>'
+                document.getElementById("demo").innerHTML=tablebody
+
+        }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="create()">display</button>
+        <p id="demo"></p>
+    </body>
+</html>

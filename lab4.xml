@@ -1,0 +1,18 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<students>
+    <student>
+        <name>Prashanth</name>
+        <slno>012</slno>
+        <class>MCA</class>
+    </student>
+    <student>
+        <name>Manish</name>
+        <slno>017</slno>
+        <class>MCA</class>
+    </student>
+    <student>
+        <name>Likitha</name>
+        <slno>060</slno>
+        <class>MCA</class>
+    </student>
+</students>
